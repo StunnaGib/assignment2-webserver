@@ -67,6 +67,7 @@ def webServer(port=13331):
       errorResponse += b"Server: RorysServer\r\n"
       errorResponse += b"Connection: close\r\n"
       errorResponse += b"\r\n"
+      errorResponse += b"<html><body><h1>404 NOT FOUND</h1></body></html>\r\n"
       connectionSocket.send(errorResponse.encode())
       #Fill in end
 
